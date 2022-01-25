@@ -18,7 +18,6 @@
 ### Info
 
 This is once again my coursework from university. Project have almost everything the teachers want from it. 
-In plans:  but I really want to rewrite the whole project on Rust lang.
 
 ### Screenshot
 
@@ -49,7 +48,11 @@ In plans:  but I really want to rewrite the whole project on Rust lang.
 - Add account-management system and roles. (now everybody can simply create, edit and delete entities from DB.)
 - Change design.
 - Maybe change subject. Songs Library is kinda weird. 
+- Create e-commerce? idk.
 - Also I nedd to do something with footer but for now it looks kinda ok.
+- Fix adding song from one artist to another in third album.
+- Add more columns to already created entities.
+- Add here ER-model and logical model, I guess.
 
 ### Useful resources
 

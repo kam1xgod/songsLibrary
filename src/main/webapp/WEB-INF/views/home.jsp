@@ -41,7 +41,7 @@
             <h5>I don't mind if you will not read it at all.</h5>
             <img src='<c:url value="/css/img2.jpg">img2</c:url>' style="width: 250px; height: 250px; opacity: 55%;"/>
             <p>This is a simple Spring Hibernate web application that represents some kind of songs search or library. Doesn't matter actually.</p>
-            <p>May be I'll change the subject but for now it's okay. You can simply navigate to any page from the top bar. Good luck!</p>
+            <p>Maybe I'll change the subject but for now it's okay. You can simply navigate to any page from the top bar. Good luck!</p>
         </div>
     </div>
 
