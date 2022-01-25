@@ -8,6 +8,7 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Heroku Deployment](#heroku-deployment)
   - [What I learned](#what-i-learned)
   - [In plans](#plans)
   - [Useful resources](#useful-resources)
@@ -35,6 +36,25 @@ This is once again my coursework from university. Project have almost everything
 - Spring MVC.
 - Hibernate.
 - TomCat 9. (v10+ doesn't work with javax ([if you really want to use v10+](https://stackoverflow.com/questions/65703840/tomcat-casting-servlets-to-javax-servlet-servlet-instead-of-jakarta-servlet-http/65704617#65704617)))
+
+### Heroku deployment
+
+- Create app on Heroku.
+- To use ClearDB (Cloud MySQL, I believe) you need to verify your account with card. I used digital one.
+- Go to 'Settings' tab of your Heroku app. 
+- Find 'Config Vars' and copy URL.
+- Go in IntelliJ IDEA, on right panel open "Database" view.
+- Create new one.
+- Paste your url in "Database" for now.
+- Delete 'mysql://'; First pair separated with ':' is username and password.
+- Then delete '@' and take URL with last forward slash before "heroku_something" and paste it in "Host".
+- Delete '/' from "Host".
+- The rest of URL is "Database" itself.
+- Test connection and apply settings.
+- Copy "URL" in "Data Sources and Drivers" window.
+- Paste it in db.properties; Also paste there "User" and "Password".
+- Create .war of your Spring MVC app.
+- Use instruction down below from Heroku documentation.i
 
 ### What I learned
 
