@@ -65,6 +65,7 @@ This is once again my coursework from university. Project have almost everything
 
 ### Plans
 
+- Refactor project. Cuz now controller class is really THICK.
 - Add account-management system and roles. (now everybody can simply create, edit and delete entities from DB.)
 - Change design.
 - Maybe change subject. Songs Library is kinda weird. 
