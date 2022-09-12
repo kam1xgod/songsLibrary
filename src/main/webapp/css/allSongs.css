@@ -3,17 +3,17 @@
 }
 
 body {
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Stint Ultra Condensed', cursive;
     margin: 0;
 }
 
 html, body {
     height: 100%;
-    background-color: #282828;
+    background-color: #6A5ACD;
 }
 
 .header {
-    background-image: url("header1.png");
+    background-image: url("header.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
@@ -29,7 +29,7 @@ html, body {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #F0E68C;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -58,12 +58,12 @@ html, body {
 }
 
 .navbar a.active {
-    background-color: #5B5B5C;
+    background-color: #E6E6FA;
     color: white;
 }
 
 .songs tr.activeSong {
-    background-color: #282828;
+    background-color: #000080;
 }
 
 /* Column container */
@@ -80,7 +80,7 @@ html, body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #5B5B5C;
+    background-color: #333;
     padding: 20px;
 }
 
@@ -93,7 +93,7 @@ html, body {
     -ms-flex: 70%; /* IE10 */
     flex: 70%;
     color: white;
-    background-color: #282828;
+    background-color: #DA70D6;
     padding: 20px;
 }
 

@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Stint Ultra Condensed', cursive;
     margin: 0;
 }
 
@@ -13,7 +13,7 @@ html, body {
 }
 
 .header {
-    background-image: url("header1.png");
+    background-image: url("header.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 100% 20%;

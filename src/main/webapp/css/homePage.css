@@ -3,17 +3,17 @@
 }
 
 body {
-    font-family: 'Readex Pro', sans-serif;
+    font-family: 'Stint Ultra Condensed', cursive;
     margin: 0;
 }
 
 html, body {
     height: 100%;
-    background-color: #282828;
+    background-color: #FF8C00;
 }
 
 .header {
-    background-image: url("header1.png");
+    background-image: url("header.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: 100% 20%;
@@ -29,7 +29,7 @@ html, body {
 
 .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #FF1493;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
@@ -54,7 +54,7 @@ html, body {
 }
 
 .navbar a.active {
-    background-color: #5B5B5C;
+    background-color: #00FA9A;
     color: white;
 }
 
@@ -72,7 +72,7 @@ html, body {
 .side {
     -ms-flex: 30%; /* IE10 */
     flex: 30%;
-    background-color: #5B5B5C;
+    background-color: #00FFFF;
     padding: 20px;
     color: white;
 }

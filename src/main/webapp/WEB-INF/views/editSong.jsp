@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kami
-  Date: 12/2/2021
-  Time: 9:21 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -19,43 +12,42 @@
 </head>
 <body>
 
-<div class="header">
-    <h1>Songs Library/Search.</h1>
-    <p>My <b> university </b> project for coursework.</p>
-</div>
+    <div class="header">
+        <h1>Музтека.</h1>
+        <p>Музыкальная библиотека.</p>
+    </div>
 
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/allSongs" class="active">All songs</a>
-    <a href="/allGenres">All genres</a>
-    <a href="/allArtists">All artists</a>
-    <a href="" class="right active">Add new</a>
-</div>
+    <div class="navbar">
+        <a href="/">Домашняя</a>
+        <a href="allSongs" class="active">Все песни</a>
+        <a href="allGenres">Все жанры</a>
+        <a href="allArtists">Все исполнители</a>
+        <a href="" class="right active">Добавить новую</a>
+    </div>
 
 <div class="row">
-    <div class="side">
-        <h2>Stay in good vibes.</h2>
-        <h5>It's all in your head.</h5>
-        <img src='<c:url value="/css/img5.png">img5</c:url>' style="width: 250px; height: 250px;"/>
-    </div>
+        <div class="side">
+            <h2>Лучшие хиты.</h2>
+            <h5>Только здесь.</h5>
+        </div>
 
     <div class="main">
         <form:form method="post" modelAttribute="song">
-            <label for="title">Title</label>
+            <label for="title">Название</label>
             <form:input path="title" id="title"/> <br><br>
-            <label for="releaseDate">Release date</label>
+            <label for="releaseDate">Дата выпуска</label>
             <form:input path="releaseDate" id="releaseDate"/> <br><br>
-            <label for="longevity">Longevity</label>
+            <label for="longevity">Длительность</label>
             <form:input path="longevity" id="longevity"/> <br><br>
-            <label for="genre">Genre</label>
+            <label for="genre">Жанр</label>
             <form:select path="genre" name="genre" id="genre">
                 <form:options items="${genreList}" itemLabel="genre" itemValue="id"/>
             </form:select> <br><br>
-            <label for="album">Album</label>
+            <label for="album">Альбом</label>
             <form:select path="album" name="album" id="album">
                 <form:options items="${albumsList}" itemLabel="title" itemValue="id"/>
             </form:select> <br><br>
-            <label for="artist">Artist</label>
+            <label for="artist">Исполнитель</label>
             <form:select path="artist" name="artist" id="artist">
                 <form:options items="${artistList}" itemLabel="name" itemValue="id"/>
             </form:select> <br><br>
@@ -65,7 +57,7 @@
 </div>
 
 <div class="footer">
-    <h2>Footer. Please add here some memes. I need memes...</h2>
+        <h2>Labadabadab</h2>
 </div>
 </body>
 </html>

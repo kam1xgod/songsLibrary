@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: kami
-  Date: 12/3/2021
-  Time: 6:18 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
@@ -13,22 +6,22 @@
     <link href="<c:url value="/css/allGenres.css"/>" rel="stylesheet" type="text/css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
 
+    <div class="header">
+        <h1>Музтека.</h1>
+        <p>Музыкальная библиотека.</p>
+    </div>
 
-<div class="header">
-    <h1>Songs Library/Search.</h1>
-    <p>My <b> university </b> project for coursework.</p>
-</div>
-<div class="navbar">
-    <a href="/">Home</a>
-    <a href="/allSongs">All songs</a>
-    <a href="/allGenres" class="active">All genres</a>
-    <a href="/allArtists">All artists</a>
-    <a href="/addGenre" class="right">Add new</a>
-</div>
+    <div class="navbar">
+        <a href="/">Домашняя</a>
+        <a href="allSongs">Все песни</a>
+        <a href="allGenres" class="active">Все жанры</a>
+        <a href="allArtists">Все исполнители</a>
+        <a href="addGenre" class="right">Добавить новый</a>
+    </div>
 
 <div class="row">
     <div class="side">
@@ -52,13 +45,11 @@
     </div>
     <div class="main">
         <c:if test="${empty activeGenre.genre}">
-            <h2>Pick genre from list on left side.</h2>
-            <h5>And that's all.</h5>
-            <p>There you can find songs and navigate to them.</p>
+            <h2>Выберите жанр слева.</h2>
         </c:if>
         <c:if test="${!empty activeGenre.genre}">
             <h2>${activeGenre.genre}</h2>
-            <h5><a href="${pageContext.request.getContextPath()}/editGenre/${activeGenre.id}">edit</a> <a href="/delete/${activeGenre.id}">delete</a></h5>
+            <h5><a href="${pageContext.request.getContextPath()}/editGenre/${activeGenre.id}">редактировать</a> <a href="/delete/${activeGenre.id}">удалить</a></h5>
             <c:forEach var="song" items="${songsWithGenre}">
                 <h5><a href="${pageContext.request.getContextPath()}/allSongs/${song.id}">${song.title}</a></h5>
             </c:forEach>
@@ -67,7 +58,7 @@
 </div>
 
 <div class="footer">
-    <h2>Footer. Please add here some memes. I need memes...</h2>
+        <h2>Labadabadab</h2>
 </div>
 
 </body>
